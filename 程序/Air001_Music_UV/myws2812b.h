@@ -4,7 +4,6 @@
 class myWs2812b {
 public:
   void SetLedColor(uint8_t ledid, uint8_t r, uint8_t g, uint8_t b);
-  void Setbrightness(uint8_t brightness);
   void Reset();
   void Clear();
   void Show();

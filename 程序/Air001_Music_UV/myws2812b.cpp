@@ -46,12 +46,12 @@ void myWs2812b::Reset() {
   }
 }
 void myWs2812b::SetLedColor(uint8_t ledid, uint8_t r, uint8_t g, uint8_t b) {
-  LED_MATRIX[ledid][0] = r;
-  LED_MATRIX[ledid][1] = g;
-  LED_MATRIX[ledid][2] = b;
+  // 这里可以更改后面的数值调节亮度，不除的话，亮度比较高，发热比较严重
+  LED_MATRIX[ledid][0] = r/5;
+  LED_MATRIX[ledid][1] = g/5;
+  LED_MATRIX[ledid][2] = b/5;
 }
-void myWs2812b::Setbrightness(uint8_t brightness) {
-}
+
 
 
 
