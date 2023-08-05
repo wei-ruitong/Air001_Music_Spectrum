@@ -7,8 +7,9 @@
 5. MCU：合宙Air001
 ## 注意事项
  1. ws2812B灯珠的排列方向不是蛇形走位，如果买到蛇形走位的，需要在程序中稍作修改
- 2. 把Air001主频调到HSI 24 MHz，HCLK 48MHz的组合。
- 3. ws2812b链接vbus或5v，不要连接3.3v
+ 2. 软件顶部工具栏，clock source and Frequency把Air001主频调到HSI 24 MHz，HCLK 48MHz的组合。
+ 3. 更改代码优化等级，顶部工具栏optimize修改为第二项（smallest（-OS）with LTO）
+ 4. ws2812b链接vbus或5v，不要连接3.3v
 ## 关于亮度的问题
 > 可以在myws2812.cpp文件中等比例修改除数的值，从而改变灯的亮度,例如:
 ```cpp
